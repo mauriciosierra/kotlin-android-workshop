@@ -10,6 +10,7 @@ import java.util.Date;
 public class ToDo {
 
     @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "item_id")
     private int itemId;
 
     @ColumnInfo(name = "title")
