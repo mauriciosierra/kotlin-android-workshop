@@ -9,4 +9,6 @@
     <string name="description_hint">Description</string>
     <string name="save_action">Save</string>
 
+    <string name="mark_done">Done!</string>
+
 </resources>
