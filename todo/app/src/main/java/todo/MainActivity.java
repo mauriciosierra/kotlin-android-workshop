@@ -1,4 +1,4 @@
-package tokotlin.todo;
+package todo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import tokotlin.todo.create.CreateToDoActivity;
+import todo.create.CreateToDoActivity;
+import tokotlin.todo.R;
 
 public class MainActivity extends AppCompatActivity {
 

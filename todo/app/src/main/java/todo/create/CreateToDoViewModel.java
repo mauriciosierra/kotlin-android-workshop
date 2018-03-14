@@ -1,11 +1,11 @@
-package tokotlin.todo.create;
+package todo.create;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.support.annotation.NonNull;
 
-import tokotlin.todo.model.ToDo;
-import tokotlin.todo.persistence.ToDoDatabase;
+import todo.model.ToDo;
+import todo.persistence.ToDoDatabase;
 
 public class CreateToDoViewModel extends AndroidViewModel {
 

@@ -1,4 +1,4 @@
-package tokotlin.todo.list;
+package todo.list;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import tokotlin.todo.R;
-import tokotlin.todo.model.ToDo;
+import todo.model.ToDo;
 
 public class ToDoRecyclerViewAdapter extends RecyclerView.Adapter<ToDoRecyclerViewAdapter.ToDoViewHolder> {
 

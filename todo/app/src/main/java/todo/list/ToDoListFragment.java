@@ -1,4 +1,4 @@
-package tokotlin.todo.list;
+package todo.list;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -15,7 +15,7 @@ import java.util.Collections;
 import java.util.List;
 
 import tokotlin.todo.R;
-import tokotlin.todo.model.ToDo;
+import todo.model.ToDo;
 
 public class ToDoListFragment extends Fragment {
 

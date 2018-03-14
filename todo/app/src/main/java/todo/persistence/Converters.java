@@ -1,4 +1,4 @@
-package tokotlin.todo.persistence;
+package todo.persistence;
 
 import android.arch.persistence.room.TypeConverter;
 

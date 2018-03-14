@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="todo.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".create.CreateToDoActivity"
+            android:name="todo.create.CreateToDoActivity"
             android:label="@string/title_create_to_do" />
     </application>
 

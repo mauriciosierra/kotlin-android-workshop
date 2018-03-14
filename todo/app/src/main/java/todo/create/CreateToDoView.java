@@ -1,4 +1,4 @@
-package tokotlin.todo.create;
+package todo.create;
 
 public interface CreateToDoView {
     void setSaveEnabled(boolean enabled);

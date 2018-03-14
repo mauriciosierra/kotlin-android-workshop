@@ -1,4 +1,4 @@
-package tokotlin.todo.model;
+package todo.model;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

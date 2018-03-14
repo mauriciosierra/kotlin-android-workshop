@@ -1,4 +1,4 @@
-package tokotlin.todo.persistence;
+package todo.persistence;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
@@ -6,7 +6,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.arch.persistence.room.TypeConverters;
 import android.content.Context;
 
-import tokotlin.todo.model.ToDo;
+import todo.model.ToDo;
 
 @Database(entities = {ToDo.class}, version = 1)
 @TypeConverters({Converters.class})
