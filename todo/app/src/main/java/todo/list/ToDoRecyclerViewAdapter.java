@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import tokotlin.todo.R;
+import todo.R;
 import todo.model.ToDo;
 
 public class ToDoRecyclerViewAdapter extends RecyclerView.Adapter<ToDoRecyclerViewAdapter.ToDoViewHolder> {
