@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import java.util.Collections;
 import java.util.List;
 
-import tokotlin.todo.R;
+import todo.R;
 import todo.model.ToDo;
 
 public class ToDoListFragment extends Fragment {

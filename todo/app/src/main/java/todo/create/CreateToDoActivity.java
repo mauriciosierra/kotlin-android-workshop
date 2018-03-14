@@ -8,7 +8,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 
-import tokotlin.todo.R;
+import todo.R;
 
 public class CreateToDoActivity extends AppCompatActivity implements CreateToDoView {
 
