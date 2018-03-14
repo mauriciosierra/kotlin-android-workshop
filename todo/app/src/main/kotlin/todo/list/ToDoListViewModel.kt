@@ -1,12 +1,10 @@
-package tokotlin.todo.list
+package todo.list
 
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.ViewModel
-
-import tokotlin.todo.model.ToDo
-import tokotlin.todo.persistence.ToDoDatabase
+import todo.model.ToDo
+import todo.persistence.ToDoDatabase
 
 class ToDoListViewModel(application: Application) : AndroidViewModel(application) {
 

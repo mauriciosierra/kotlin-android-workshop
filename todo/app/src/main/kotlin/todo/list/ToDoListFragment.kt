@@ -1,4 +1,4 @@
-package tokotlin.todo.list
+package todo.list
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
@@ -10,7 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import tokotlin.todo.R
-import tokotlin.todo.model.ToDo
+import todo.model.ToDo
 
 class ToDoListFragment : Fragment() {
 
