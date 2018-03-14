@@ -1,4 +1,4 @@
-package tokotlin.todo.details
+package todo.details
 
 import android.arch.lifecycle.ViewModelProviders
 import android.support.v7.app.AppCompatActivity

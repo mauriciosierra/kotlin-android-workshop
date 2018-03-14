@@ -1,4 +1,4 @@
-package tokotlin.todo.details
+package todo.details
 
 interface ToDoDetailsView {
     fun displayTitle(title: String)

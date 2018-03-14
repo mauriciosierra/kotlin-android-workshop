@@ -1,9 +1,9 @@
-package tokotlin.todo.details
+package todo.details
 
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
-import tokotlin.todo.model.ToDo
-import tokotlin.todo.persistence.ToDoDatabase
+import todo.model.ToDo
+import todo.persistence.ToDoDatabase
 
 class ToDoDetailsViewModel(application: Application) : AndroidViewModel(application) {
 

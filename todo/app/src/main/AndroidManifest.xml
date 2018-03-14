@@ -22,7 +22,7 @@
         <activity
             android:name="todo.create.CreateToDoActivity"
             android:label="@string/title_create_to_do" />
-        <activity android:name=".details.ToDoDetailsActivity"></activity>
+        <activity android:name="todo.details.ToDoDetailsActivity"></activity>
     </application>
 
 </manifest>
