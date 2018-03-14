@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 
-import tokotlin.todo.R
+import todo.R
 import todo.model.ToDo
 
 class ToDoRecyclerViewAdapter(private var toDoList: List<ToDo>?) : RecyclerView.Adapter<ToDoRecyclerViewAdapter.ToDoViewHolder>() {
