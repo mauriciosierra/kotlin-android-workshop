@@ -4,9 +4,9 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import todo.model.ToDo
-import tokotlin.todo.R
 import kotlinx.android.synthetic.main.todo_list_item.view.*
+import todo.R
+import todo.model.ToDo
 
 class ToDoRecyclerViewAdapter(private var toDoList: List<ToDo>?) : RecyclerView.Adapter<ToDoRecyclerViewAdapter.ToDoViewHolder>() {
 

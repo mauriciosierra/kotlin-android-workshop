@@ -4,7 +4,7 @@ import android.arch.lifecycle.ViewModelProviders
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_to_do_details.*
-import tokotlin.todo.R
+import todo.R
 
 class ToDoDetailsActivity : AppCompatActivity(), ToDoDetailsView {
 

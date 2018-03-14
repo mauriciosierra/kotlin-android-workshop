@@ -12,8 +12,8 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_main.view.*
 import todo.details.ToDoDetailsActivity
+import todo.R
 import todo.model.ToDo
-import tokotlin.todo.R
 
 class ToDoListFragment : Fragment() {
 
