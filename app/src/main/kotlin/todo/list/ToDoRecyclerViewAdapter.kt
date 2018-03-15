@@ -35,7 +35,7 @@ class ToDoRecyclerViewAdapter(private var toDoList: List<ToDo>?) : RecyclerView.
             itemView.title.text = toDo?.title ?: ""
             itemView.description.text = toDo?.description ?: ""
             toDo?.let {
-                itemView.setOnClickListener({ _ -> listener?.invoke(it) })
+                itemView.setOnClickListener { _ -> listener?.invoke(it) }
             }
         }
     }
