@@ -2,8 +2,8 @@ package todo.create;
 
 import android.app.DatePickerDialog;
 import android.arch.lifecycle.ViewModelProviders;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -13,7 +13,6 @@ import android.widget.Spinner;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 import todo.R;
 
