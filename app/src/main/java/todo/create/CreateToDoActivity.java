@@ -1,12 +1,19 @@
 package todo.create;
 
+import android.app.DatePickerDialog;
 import android.arch.lifecycle.ViewModelProviders;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 import todo.R;
 
@@ -22,8 +29,9 @@ public class CreateToDoActivity extends AppCompatActivity implements CreateToDoV
         viewModel = ViewModelProviders.of(this).get(CreateToDoViewModel.class);
         viewModel.setView(this);
 
-        setUpClickListener();
-        setUpTextWatchers();
+        setUpTitleTextWatcher();
+        setUpSaveClickListener();
+        setUpDueDateControl();
     }
 
     @Override
@@ -41,7 +49,7 @@ public class CreateToDoActivity extends AppCompatActivity implements CreateToDoV
         });
     }
 
-    private void setUpTextWatchers() {
+    private void setUpTitleTextWatcher() {
         final EditText title = findViewById(R.id.title);
         title.addTextChangedListener(new TextWatcher() {
             @Override
@@ -58,7 +66,7 @@ public class CreateToDoActivity extends AppCompatActivity implements CreateToDoV
         title.setText("");
     }
 
-    private void setUpClickListener() {
+    private void setUpSaveClickListener() {
         findViewById(R.id.create).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,10 +75,32 @@ public class CreateToDoActivity extends AppCompatActivity implements CreateToDoV
         });
     }
 
+    private void setUpDueDateControl() {
+        findViewById(R.id.due_date).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTime(viewModel.getDueDate());
+                DatePickerDialog datePicker = new DatePickerDialog(CreateToDoActivity.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                        Calendar calendar = Calendar.getInstance();
+                        calendar.set(year, month, dayOfMonth);
+                        viewModel.setDueDate(calendar.getTime());
+                        ((EditText)findViewById(R.id.due_date)).setText(SimpleDateFormat.getDateInstance().format(calendar.getTime()));
+                    }
+                }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DATE));
+                datePicker.show();
+            }
+        });
+    }
+
     private void onSaveClicked() {
         final EditText title = findViewById(R.id.title);
         final EditText description = findViewById(R.id.description);
-        viewModel.addToDo(title.getText().toString(), description.getText().toString());
+        final Spinner categorySpinner = findViewById(R.id.categories);
+        final String category = categorySpinner.getSelectedItem().toString();
+        viewModel.addToDo(title.getText().toString(), description.getText().toString(), category);
     }
 
 }
